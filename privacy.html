@@ -19,53 +19,83 @@
     <h2>2. Information Accessed</h2>
     <p>
       With the owner's authorization, the application uses
-      Google OAuth credentials to upload videos to the owner's
-      YouTube channel. It accesses only the permissions needed
-      for the authorized upload workflow.
+      Google OAuth credentials to upload videos to the
+      owner's YouTube channel.
     </p>
 
     <h2>3. How Information Is Used</h2>
     <p>
-      Google authorization is used to upload the generated video,
-      title, description, tags, and publication settings to
-      YouTube. The application does not sell Google user data
-      or use it for advertising.
+      Google authorization is used to upload generated videos,
+      titles, descriptions, tags, and publication settings
+      to YouTube. Google user data is not sold or used for
+      advertising.
     </p>
 
     <h2>4. Storage and Security</h2>
     <p>
-      OAuth credentials are stored as encrypted GitHub Actions
-      repository secrets and are provided to the automation
-      workflow when required. Credentials should never be
-      included in source code or public logs.
+      OAuth credentials are stored as GitHub Actions repository
+      secrets and supplied to the automation workflow when
+      needed. Credentials must not be included in source code
+      or public logs.
     </p>
     <p>
-      Generated scripts, video files, and other workflow outputs
-      may be retained temporarily as GitHub Actions artifacts,
-      subject to the repository's artifact retention settings.
-    </p>
-
-    <h2>5. Sharing</h2>
-    <p>
-      The application uses Google services to authorize and
-      upload videos, GitHub Actions to run the workflow, Gemini
-      API to generate scripts and narration, and Pixabay to
-      search for stock footage. Information is transmitted to
-      these services only as needed for the described functions.
+      Generated scripts, videos, audio, and other workflow
+      outputs may be stored temporarily as GitHub Actions
+      artifacts. Retention depends on the workflow settings.
     </p>
 
-    <h2>6. Data Retention and Revocation</h2>
+    <h2>5. Third-Party Services</h2>
     <p>
-      The owner can remove stored workflow artifacts and
-      revoke the application's Google authorization through
-      their Google Account security settings. Revoking access
-      may stop automated uploads.
+      The application uses Google services for authorization
+      and YouTube uploads, Gemini API for script and narration
+      generation, GitHub Actions for workflow execution, and
+      Pixabay for stock video searches.
+    </p>
+    <p>
+      Information is sent to these services as necessary
+      to provide the application's functions and is subject
+      to the relevant service policies.
+    </p>
+
+    <h2>6. Data Deletion and Access Revocation</h2>
+    <p>
+      To request deletion of application data under the
+      owner's control, contact the email address below.
+      Requests will be reviewed and handled where technically
+      possible. Data held by third-party services may need
+      to be deleted through those services separately.
+    </p>
+    <p>
+      The owner can revoke Google account access through
+      Google Account security settings. Revoking access
+      prevents further authorized uploads until access
+      is restored.
     </p>
 
     <h2>7. Contact</h2>
     <p>
       For privacy questions, contact:
       thegom99@gmail.com
+    </p>
+
+    <h2>8. Google and YouTube Policies</h2>
+    <p>
+      This application uses YouTube API Services.
+    </p>
+    <p>
+      <a href="https://policies.google.com/privacy">
+        Google Privacy Policy
+      </a>
+    </p>
+    <p>
+      <a href="https://www.youtube.com/t/terms">
+        YouTube Terms of Service
+      </a>
+    </p>
+    <p>
+      <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">
+        YouTube API Services Terms of Service
+      </a>
     </p>
   </main>
 </body>
